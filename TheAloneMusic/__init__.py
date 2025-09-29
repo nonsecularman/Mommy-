@@ -1,0 +1,33 @@
+#
+# Copyright (C) 2021-2022 by TheAloneteam@Github, < https://github.com/TheAloneTeam >.
+#
+# This file is part of < https://github.com/TheAloneTeam/TheAloneMusic > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TheAloneTeam/TheAloneMusic/blob/master/LICENSE >
+#
+# All rights reserved.
+
+from TheAloneMusic.core.bot import ThaAloneMusic
+from TheAloneMusic.core.dir import dirr
+from TheAloneMusic.core.userbot import Userbot
+from TheAloneMusic.misc import dbb, heroku
+
+from .logging import LOGGER
+
+dirr()
+dbb()
+heroku()
+
+app = Anony()
+userbot = Userbot()
+
+
+from .platforms import *
+
+Apple = AppleAPI()
+Carbon = CarbonAPI()
+SoundCloud = SoundAPI()
+Spotify = SpotifyAPI()
+Resso = RessoAPI()
+Telegram = TeleAPI()
+YouTube = YouTubeAPI()
