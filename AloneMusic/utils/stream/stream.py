@@ -15,7 +15,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from AloneMusic import Carbon, YouTube, app
-from AloneMusic.core.call import Anony
+from AloneMusic.core.call import Alone
 from AloneMusic.misc import db
 from AloneMusic.utils.database import add_active_video_chat, is_active_chat
 from AloneMusic.utils.exceptions import AssistantErr
