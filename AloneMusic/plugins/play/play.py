@@ -6,37 +6,43 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from AnonXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.utils import seconds_to_min, time_to_seconds
-from AnonXMusic.utils.channelplay import get_channeplayCB
-from AnonXMusic.utils.decorators.language import languageCB
-from AnonXMusic.utils.decorators.play import PlayWrapper
-from AnonXMusic.utils.formatters import formats
-from AnonXMusic.utils.inline import (
+from AloneMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from AloneMusic.core.call import Anony
+from AloneMusic.utils import seconds_to_min, time_to_seconds
+from AloneMusic.utils.channelplay import get_channeplayCB
+from AloneMusic.utils.decorators.language import languageCB
+from AloneMusic.utils.decorators.play import PlayWrapper
+from AloneMusic.utils.formatters import formats
+from AloneMusic.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from AnonXMusic.utils.logger import play_logs
-from AnonXMusic.utils.stream.stream import stream
+from AloneMusic.utils.logger import play_logs
+from AloneMusic import stream
 from config import BANNED_USERS, lyrical
+
+
+EMOJII = ["🔥", "💋", "🥺", "😒", "💖",
+          "💘", "💕", "✨", "🧪", "🥰",
+          "🚩", "🫦", "💔", "🦠",
+          "😓", "🫧"]
+
+
+async def delete_after_delay(msg):
+    try:
+        await asyncio.sleep(60)        
+        await msg.delete()
+    except Exception:
+        pass
 
 
 @app.on_message(
     filters.command(
-        [
-            "play",
-            "vplay",
-            "cplay",
-            "cvplay",
-            "playforce",
-            "vplayforce",
-            "cplayforce",
-            "cvplayforce",
-        ]
+        ["play", "vplay", "cplay", "cvplay",
+         "playforce", "vplayforce", "cplayforce", "cvplayforce"]
     )
     & filters.group
     & ~BANNED_USERS
@@ -53,8 +59,17 @@ async def play_commnd(
     url,
     fplay,
 ):
+    emoji = random.choice(EMOJII)
+
+    sticker_msg = await message.reply_sticker(
+        "CAACAgUAAyEFAASOlzVAAAEBbMVoZBvc22oR8X-QlMPpERj8bdrDtgAChAsAAjXBOFddqD7hjDYLoh4E"
+    )
+
+    asyncio.create_task(delete_after_delay(sticker_msg))
+
+    # स्टिकर के बाद का play message
     mystic = await message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
+        _["play_2"].format(channel) if channel else emoji
     )
     plist_id = None
     slider = None
