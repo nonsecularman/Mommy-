@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2022 by TheAloneteam@Github, < https://github.com/TheAloneTeam >.
+#
+# This file is part of < https://github.com/TheAloneTeam/AloneMusic > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TheAloneTeam/AloneMusic/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import os
 from random import randint
 from typing import Union
@@ -5,15 +14,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from AnonXMusic import Carbon, YouTube, app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.misc import db
-from AnonXMusic.utils.database import add_active_video_chat, is_active_chat
-from AnonXMusic.utils.exceptions import AssistantErr
-from AnonXMusic.utils.inline import aq_markup, close_markup, stream_markup
-from AnonXMusic.utils.pastebin import AnonyBin
-from AnonXMusic.utils.stream.queue import put_queue, put_queue_index
-from AnonXMusic.utils.thumbnails import get_thumb
+from AloneMusic import Carbon, YouTube, app
+from AloneMusic.core.call import Anony
+from AloneMusic.misc import db
+from AloneMusic.utils.database import add_active_video_chat, is_active_chat
+from AloneMusic.utils.exceptions import AssistantErr
+from AloneMusic.utils.inline import aq_markup, close_markup, stream_markup
+from AloneMusic.utils.pastebin import AnonyBin
+from AloneMusic.utils.stream.queue import put_queue, put_queue_index
+from AloneMusic.utils.thumbnails import get_thumb
 
 
 async def stream(
