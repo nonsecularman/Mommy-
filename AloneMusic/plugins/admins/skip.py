@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from AnonXMusic import YouTube, app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.misc import db
-from AnonXMusic.utils.database import get_loop
-from AnonXMusic.utils.decorators import AdminRightsCheck
-from AnonXMusic.utils.inline import close_markup, stream_markup
-from AnonXMusic.utils.stream.autoclear import auto_clean
-from AnonXMusic.utils.thumbnails import get_thumb
+from AloneMusic import YouTube, app
+from AloneMusic.core.call import Alone
+from AloneMusic.misc import db
+from AloneMusic.utils.database import get_loop
+from AloneMusic.utils.decorators import AdminRightsCheck
+from AloneMusic.utils.inline import close_markup, stream_markup
+from AloneMusic.utils.stream.autoclear import auto_clean
+from AloneMusic.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
