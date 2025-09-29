@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from AnonXMusic import LOGGER, YouTube, app
-from AnonXMusic.misc import db
-from AnonXMusic.utils.database import (
+from AloneMusic import LOGGER, YouTube, app
+from AloneMusic.misc import db
+from AloneMusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from AnonXMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from AnonXMusic.utils.exceptions import AssistantErr
-from AnonXMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from AnonXMusic.utils.inline.play import stream_markup
-from AnonXMusic.utils.stream.autoclear import auto_clean
-from AnonXMusic.utils.thumbnails import get_thumb
+from AloneMusic.utils.exceptions import AssistantErr
+from AloneMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
+from AloneMusic.utils.inline.play import stream_markup
+from AloneMusic.utils.stream.autoclear import auto_clean
+from AloneMusic.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
@@ -396,6 +396,7 @@ class Call(PyTgCalls):
                 run = await app.send_photo(
                     chat_id=original_chat_id,
                     photo=img,
+                    has_spoiler=True,
                     caption=_["stream_1"].format(
                         f"https://t.me/{app.username}?start=info_{videoid}",
                         title[:23],
@@ -443,6 +444,7 @@ class Call(PyTgCalls):
                 run = await app.send_photo(
                     chat_id=original_chat_id,
                     photo=img,
+                    has_spoiler=True,
                     caption=_["stream_1"].format(
                         f"https://t.me/{app.username}?start=info_{videoid}",
                         title[:23],
@@ -474,6 +476,7 @@ class Call(PyTgCalls):
                 run = await app.send_photo(
                     chat_id=original_chat_id,
                     photo=config.STREAM_IMG_URL,
+                    has_spoiler=True,
                     caption=_["stream_2"].format(user),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -505,6 +508,7 @@ class Call(PyTgCalls):
                         photo=config.TELEGRAM_AUDIO_URL
                         if str(streamtype) == "audio"
                         else config.TELEGRAM_VIDEO_URL,
+                        has_spoiler=True,
                         caption=_["stream_1"].format(
                             config.SUPPORT_CHAT, title[:23], check[0]["dur"], user
                         ),
@@ -517,6 +521,7 @@ class Call(PyTgCalls):
                     run = await app.send_photo(
                         chat_id=original_chat_id,
                         photo=config.SOUNCLOUD_IMG_URL,
+                        has_spoiler=True,
                         caption=_["stream_1"].format(
                             config.SUPPORT_CHAT, title[:23], check[0]["dur"], user
                         ),
@@ -530,6 +535,7 @@ class Call(PyTgCalls):
                     run = await app.send_photo(
                         chat_id=original_chat_id,
                         photo=img,
+                        has_spoiler=True,
                         caption=_["stream_1"].format(
                             f"https://t.me/{app.username}?start=info_{videoid}",
                             title[:23],
@@ -598,4 +604,4 @@ class Call(PyTgCalls):
             await self.change_stream(client, update.chat_id)
 
 
-Anony = Call()
+Alone = Call()
