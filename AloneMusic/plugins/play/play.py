@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AloneMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AloneMusic.core.call import Anony
+from AloneMusic.core.call import Alone
 from AloneMusic.utils import seconds_to_min, time_to_seconds
 from AloneMusic.utils.channelplay import get_channeplayCB
 from AloneMusic.utils.decorators.language import languageCB
@@ -303,7 +303,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Anony.stream_call(url)
+                await Alone.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
