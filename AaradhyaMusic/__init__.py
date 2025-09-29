@@ -7,10 +7,10 @@
 #
 # All rights reserved.
 
-from AaradhyaMusic.core.bot import Aaradhya 
-from AaradhyaMusic.core.dir import dirr
-from AaradhyaMusic.core.userbot import Userbot
-from AaradhyaMusic.misc import dbb, heroku
+from AloneMusic.core.bot import Alone 
+from AloneMusic.core.dir import dirr
+from AloneMusic.core.userbot import Userbot
+from AloneMusic.misc import dbb, heroku
 
 from .logging import LOGGER
 
@@ -18,7 +18,7 @@ dirr()
 dbb()
 heroku()
 
-app = Aaradhya()
+app = Alone()
 userbot = Userbot()
 
 
