@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from AnonXMusic import app
-from AnonXMusic.utils.database import (
+from AloneMusic import app
+from AloneMusic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
