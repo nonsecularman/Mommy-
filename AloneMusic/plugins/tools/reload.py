@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2022 by TheAloneteam@Github, < https://github.com/TheAloneTeam >.
+#
+# This file is part of < https://github.com/TheAloneTeam/AloneMusic > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TheAloneTeam/AloneMusic/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import asyncio
 import time
 
@@ -6,7 +15,7 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
 from AloneMusic import app
-from AloneMusic.core.call import Anony
+from AloneMusic.core.call import Alone
 from AloneMusic.misc import db
 from AloneMusic.utils.database import get_assistant, get_authuser_names, get_cmode
 from AloneMusic.utils.decorators import ActualAdminCB, AdminActual, language
@@ -53,7 +62,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Anony.stop_stream_force(message.chat.id)
+        await Alone.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -80,7 +89,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Anony.stop_stream_force(chat_id)
+            await Alone.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
