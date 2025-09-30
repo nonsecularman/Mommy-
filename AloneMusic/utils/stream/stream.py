@@ -20,7 +20,7 @@ from AloneMusic.misc import db
 from AloneMusic.utils.database import add_active_video_chat, is_active_chat
 from AloneMusic.utils.exceptions import AssistantErr
 from AloneMusic.utils.inline import aq_markup, close_markup, stream_markup
-from AloneMusic.utils.pastebin import AnonyBin
+from AloneMusic.utils.pastebin import AloneBin
 from AloneMusic.utils.stream.queue import put_queue, put_queue_index
 from AloneMusic.utils.thumbnails import get_thumb
 
