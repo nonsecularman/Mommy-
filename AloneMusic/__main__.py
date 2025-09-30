@@ -47,7 +47,7 @@ async def init():
         importlib.import_module("AloneMusic.plugins" + all_module)
     LOGGER("AloneMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await Anony.start()
+    await Alone.start()
     try:
         await Alone.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
