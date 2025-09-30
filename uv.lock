@@ -1,0 +1,85 @@
+[meta]
+python = ">=3.10"
+project = "AloneMusic"
+version = "0.1.0"
+
+[package.aiofiles]
+version = "*"
+
+[package.aiohttp]
+version = "*"
+
+[package.apscheduler]
+version = "*"
+
+[package.beautifulsoup4]
+version = "*"
+
+[package.dnspython]
+version = "*"
+
+[package.ffmpeg-python]
+version = "*"
+
+[package.gitpython]
+version = "*"
+
+[package.hachoir]
+version = "*"
+
+[package.heroku3]
+version = "*"
+
+[package.humanize]
+version = "*"
+
+[package.motor]
+version = "*"
+
+[package.Pillow]
+version = "9.5.0"
+
+[package.psutil]
+version = "*"
+
+[package.httpx]
+version = "0.27.2"
+
+[package.py-tgcalls]
+version = "0.9.7"
+
+[package.pykeyboard]
+version = "*"
+
+[package.pyrofork]
+version = "*"
+
+[package.python-dotenv]
+version = "*"
+
+[package.pyyaml]
+version = "*"
+
+[package.requests]
+version = "*"
+
+[package.speedtest-cli]
+version = "*"
+
+[package.spotipy]
+version = "*"
+
+[package.tgcrypto]
+version = "*"
+
+[package.unidecode]
+version = "*"
+
+[package.yt-dlp]
+version = ">=2025.01.15"
+
+[package.youtube-search]
+version = "*"
+
+[package.youtube-search-python]
+version = "*"
