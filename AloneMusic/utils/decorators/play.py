@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2022 by TheAloneteam@Github, < https://github.com/TheAloneTeam >.
+#
+# This file is part of < https://github.com/TheAloneTeam/AloneMusic > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TheAloneTeam/AloneMusic/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import asyncio
 
 from pyrogram.enums import ChatMemberStatus
@@ -9,9 +18,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from AnonXMusic import YouTube, app
-from AnonXMusic.misc import SUDOERS
-from AnonXMusic.utils.database import (
+from AloneMusic import YouTube, app
+from AloneMusic.misc import SUDOERS
+from AloneMusic.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -20,7 +29,7 @@ from AnonXMusic.utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from AnonXMusic.utils.inline import botplaylist_markup
+from AloneMusic.utils.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from strings import get_string
 
