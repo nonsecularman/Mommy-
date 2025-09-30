@@ -26,8 +26,9 @@ from AloneMusic.utils.database import (
     remove_active_chat,
     remove_active_video_chat,
 )
+
 from AloneMusic.utils.decorators.language import language
-from AloneMusic.utils.pastebin import AnonyBin
+from AloneMusic.utils.pastebin import AloneBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
