@@ -6,6 +6,7 @@
 # Please see < https://github.com/TheAloneTeam/TheAloneMusic/blob/master/LICENSE >
 #
 # All rights reserved.
+
 import re
 from os import getenv
 
