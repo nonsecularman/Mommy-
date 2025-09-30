@@ -30,7 +30,7 @@ from AloneMusic.utils.inline import (
     track_markup,
 )
 from AloneMusic.utils.logger import play_logs
-from AloneMusic import stream
+from AloneMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
