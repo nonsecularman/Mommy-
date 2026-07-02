@@ -20,9 +20,9 @@ from pyrogram.types import Message
 from AloneMusic import LOGGER
 
 # Use environment variables for configuration
-API_URL = os.getenv("API_URL", "https://web.riteshyt.in").rstrip("/")
-API_KEY = os.getenv("API_KEY", "")
+API_URL = os.environ.get("SHRUTI_API_URL", "http://api01.shrutibots.site")
 
+API_KEY = os.environ.get("SHRUTI_API_KEY", "ShrutiBotsBMnH1V0alhOxaXZLLcpE") ## Get This API KEY FROM TELEGRAM BOT USERNAME: @SHRUTIAPIBOT 
 
 async def download_assistant(query: str, dl_type: str) -> str:
     """Helper to get stream URL from the API"""
