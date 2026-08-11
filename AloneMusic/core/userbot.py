@@ -56,8 +56,14 @@ class Userbot(Client):
 
     async def start(self):
         LOGGER(__name__).info("Starting Assistants...")
+        from AloneMusic import app
+        bot_username = app.username
         if config.STRING1:
             await self.one.start()
+            try:
+                await self.one.send_message(bot_username, "/start")
+            except Exception as e:
+                LOGGER(__name__).warning(f"Assistant 1 failed to send /start to bot: {e}")
             try:
                 await self.one.join_chat("TheAloneTeam")
                 await self.one.join_chat("Aashikteam")
@@ -80,6 +86,10 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
+                await self.two.send_message(bot_username, "/start")
+            except Exception as e:
+                LOGGER(__name__).warning(f"Assistant 2 failed to send /start to bot: {e}")
+            try:
                 await self.two.join_chat("Aashikteam")
                 await self.one.join_chat("TheAloneTeam")
             except:
@@ -100,6 +110,10 @@ class Userbot(Client):
 
         if config.STRING3:
             await self.three.start()
+            try:
+                await self.three.send_message(bot_username, "/start")
+            except Exception as e:
+                LOGGER(__name__).warning(f"Assistant 3 failed to send /start to bot: {e}")
             try:
                 await self.three.join_chat("Aashikteam")
                 await self.one.join_chat("TheAloneTeam")
@@ -122,6 +136,10 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
+                await self.four.send_message(bot_username, "/start")
+            except Exception as e:
+                LOGGER(__name__).warning(f"Assistant 4 failed to send /start to bot: {e}")
+            try:
                 await self.four.join_chat("TheAloneTeam")
                 await self.one.join_chat("Aashikteam")
             except:
@@ -142,6 +160,10 @@ class Userbot(Client):
 
         if config.STRING5:
             await self.five.start()
+            try:
+                await self.five.send_message(bot_username, "/start")
+            except Exception as e:
+                LOGGER(__name__).warning(f"Assistant 5 failed to send /start to bot: {e}")
             try:
                 await self.five.join_chat("TheAloneTeam")
                 await self.one.join_chat("Aashikteam")

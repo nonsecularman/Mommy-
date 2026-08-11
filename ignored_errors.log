@@ -1,0 +1,80 @@
+
+--- Ignored Error | Internal Error @ 2026-08-09 05:47:50 ---
+Type: AssistantErr
+Function: join_call
+Traceback:
+Traceback (most recent call last):
+  File "/root/Mommy-/AloneMusic/core/call.py", line 306, in join_call
+    await self._play_on_assistant(assistant, chat_id, stream)
+  File "/root/Mommy-/AloneMusic/utils/errors.py", line 159, in wrapper
+    raise err
+  File "/root/Mommy-/AloneMusic/utils/errors.py", line 153, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/AloneMusic/core/call.py", line 127, in _play_on_assistant
+    await client.play(
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/mtproto_required.py", line 23, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/mutex.py", line 12, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/methods/stream/play.py", line 78, in play
+    raise NoActiveGroupCall()
+pytgcalls.exceptions.NoActiveGroupCall: No active group call
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Mommy-/AloneMusic/utils/errors.py", line 153, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/AloneMusic/core/call.py", line 308, in join_call
+    raise AssistantErr(_["call_8"])
+AloneMusic.utils.exceptions.AssistantErr: <b>Nᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.</b>
+
+Pʟᴇᴀsᴇ sᴛᴀʀᴛ ᴠɪᴅᴇᴏᴄʜᴀᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.
+------------------------------------------
+
+--- Ignored Error | Internal Error @ 2026-08-09 06:09:17 ---
+Type: AssistantErr
+Function: join_call
+Traceback:
+Traceback (most recent call last):
+  File "/root/Mommy-/AloneMusic/core/call.py", line 306, in join_call
+    await self._play_on_assistant(assistant, chat_id, stream)
+  File "/root/Mommy-/AloneMusic/utils/errors.py", line 159, in wrapper
+    raise err
+  File "/root/Mommy-/AloneMusic/utils/errors.py", line 153, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/AloneMusic/core/call.py", line 127, in _play_on_assistant
+    await client.play(
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/statictypes.py", line 96, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/mtproto_required.py", line 23, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/mutex.py", line 12, in async_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/venv/lib/python3.11/site-packages/pytgcalls/methods/stream/play.py", line 78, in play
+    raise NoActiveGroupCall()
+pytgcalls.exceptions.NoActiveGroupCall: No active group call
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Mommy-/AloneMusic/utils/errors.py", line 153, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Mommy-/AloneMusic/core/call.py", line 308, in join_call
+    raise AssistantErr(_["call_8"])
+AloneMusic.utils.exceptions.AssistantErr: <b>Nᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.</b>
+
+Pʟᴇᴀsᴇ sᴛᴀʀᴛ ᴠɪᴅᴇᴏᴄʜᴀᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.
+------------------------------------------

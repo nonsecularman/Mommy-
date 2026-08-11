@@ -21,6 +21,8 @@ heroku()
 app = Alone()
 userbot = Userbot()
 
+import AloneMusic.utils.premium_patch
+
 
 from .platforms import (Apple, Carbon, Resso, Soundcloud, Spotify, Telegram,
                         Youtube)

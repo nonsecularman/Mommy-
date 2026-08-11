@@ -1,0 +1,102 @@
+{
+    "sudoers": [
+        {
+            "sudo": "sudo",
+            "sudoers": [
+                8558893620,
+                8240671511,
+                7519668949
+            ]
+        }
+    ],
+    "gban": [],
+    "blockedusers": [],
+    "assistants": [
+        {
+            "chat_id": -1004486409663,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1004490208208,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003972156953,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003977109578,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003723387608,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1002862217923,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003390690925,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003156233868,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1004359731811,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003806734296,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003871574086,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1004458322981,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003156686432,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1004454150131,
+            "assistant": 1
+        },
+        {
+            "chat_id": -1003507638827,
+            "assistant": 1
+        }
+    ],
+    "autoend": [],
+    "language": [],
+    "tgusersdb": [
+        {
+            "user_id": 8558893620
+        },
+        {
+            "user_id": 6828123747
+        },
+        {
+            "user_id": 8869716468
+        }
+    ],
+    "onoffper": [],
+    "playmode": [],
+    "playtypedb": [],
+    "authuser": [],
+    "adminauth": [],
+    "blacklistChat": [],
+    "chats": [
+        {
+            "chat_id": -1004359731811
+        }
+    ],
+    "skipmode": [],
+    "upcount": []
+}
